@@ -1,5 +1,7 @@
 # Getting started!
 
+Get list Hadits in table `HTML` from `http://core.carihadis.com/`
+
 ## Before Started
 
 1. run `npm install` or `yarn install`
