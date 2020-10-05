@@ -45,3 +45,13 @@ export const getListHadits = async () => {
         console.log(error("Browser Closed"));
     }
 }
+
+export const getDataHadits = async (req, res) => {
+    try {
+        const jsonString = fs.readFileSync('src/public/data_hadits.json')
+        const data = JSON.parse(jsonString)
+        return res.send(data)
+    } catch (err) {
+        console.log(err.getMessage())
+    }
+}
